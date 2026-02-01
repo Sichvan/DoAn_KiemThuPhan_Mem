@@ -1,15 +1,16 @@
-void Hoanvi(int &a, int &b) {
-    int temp = a;
-    a = b;
-    b = temp;
+void Hoanvi(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
 }
 
-void BubleSort(int a[], int N) {
+void BubbleSort(int a[], int n) {
     int i, j;
-    for (i = 0; i < N - 1; i++) {
-        for (j = N - 1; j > i; j--) {
-            if (a[j] < a[j - 1]) // nếu sai vị trí thì đổi chỗ
-                Hoanvi(a[j], a[j - 1]);
+    for (i = 0; i < n - 1; i++) {
+        for (j = n - 1; j > i; j--) {
+            if (a[j] < a[j - 1]) {
+                Hoanvi(&a[j], &a[j - 1]);
+            }
         }
     }
 }

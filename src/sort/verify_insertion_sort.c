@@ -1,6 +1,6 @@
 #include <assert.h>
 #include "../common.h"
-#include "insertion_sort.c" // Đảm bảo file này đã sửa int &a thành int *a
+#include "insertion_sort.c" 
 
 void check_sorted(int a[], int n) {
     for (int i = 0; i < n - 1; i++) {

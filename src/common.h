@@ -5,6 +5,8 @@
 int nondet_int();
 void __CPROVER_assume(_Bool assumption);
 
-#define N 5 // Kích thước mảng kiểm chứng (giữ nhỏ để chạy nhanh)
+// Kích thước mảng kiểm chứng
+// Đây là nguyên nhân gây lỗi nếu bạn đặt tên biến là N ở file .c
+#define N 5 
 
 #endif

@@ -1,6 +1,6 @@
 #include <assert.h>
 #include "../common.h"
-#include "interchange_sort.c" // Nhớ sửa lỗi biến 'min' thành 'j' như tôi nhắc bài trước
+#include "interchange_sort.c" 
 
 void check_sorted(int a[], int n) {
     for (int i = 0; i < n - 1; i++) {
