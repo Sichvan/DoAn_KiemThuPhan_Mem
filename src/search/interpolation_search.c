@@ -5,6 +5,8 @@ int InterpolationSearch(int a[], int n, int x) {
             if (a[lo] == x) return lo;
             return -1;
         }
+        // Tràn bọo nhơ hay cmjr lag máy 
+        // double pos = lo + ((double)(x - a[lo]) / (a[hi] - a[lo])) * (hi - lo);
         int pos = lo + (((double)(hi - lo) / (a[hi] - a[lo])) * (x - a[lo]));
         if (a[pos] == x)
             return pos;
